@@ -1,0 +1,23 @@
+server:
+  port: 8847
+spring:
+  messages:
+    basename: i18n/messages
+  devtools:
+    restart:
+      enabled: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    #url: jdbc:postgresql://localhost:5432/icgdevdb?stringtype=unspecified
+    #?stringtype=unspecified string类型自动转换用
+    url: jdbc:postgresql://localhost:5432/icgdevdb
+    username: javaadmin
+    password: asd8751A52s
+mybatis-plus:
+  configuration:
+    # show SQL query log
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
